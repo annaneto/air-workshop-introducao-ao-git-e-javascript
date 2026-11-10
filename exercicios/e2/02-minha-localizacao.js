@@ -4,14 +4,12 @@ function descrever(ponto) {
   return `(${ponto.x}, ${ponto.y})`;
 }
 
-// TODO: calcule a distância entre os pontos a e b (dica: Math.hypot).
 function distancia(a, b) {
-  return 0;
+  return Math.hypot(b.x - a.x, b.y - a.y);
 }
 
-// TODO: devolva um novo ponto deslocado de dx e dy, sem alterar o original.
 function mover(ponto, dx, dy) {
-  return ponto;
+  return { x: ponto.x + dx, y: ponto.y + dy };
 }
 
 if (require.main === module) {
@@ -21,4 +19,4 @@ if (require.main === module) {
   console.log(`Depois de mover (1, -1): ${descrever(mover(minhaLocalizacao, 1, -1))}`);
 }
 
-module.exports = { minhaLocalizacao, descrever, distancia, mover }
+module.exports = { minhaLocalizacao, descrever, distancia, mover };
