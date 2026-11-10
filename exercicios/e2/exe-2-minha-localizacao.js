@@ -21,4 +21,4 @@ if (require.main === module) {
   console.log(`Depois de mover (1, -1): ${descrever(mover(minhaLocalizacao, 1, -1))}`);
 }
 
-module.exports = { minhaLocalizacao, descrever, distancia, mover };
+module.exports = { minhaLocalizacao, descrever, distancia, mover }
